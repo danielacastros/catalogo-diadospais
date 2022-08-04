@@ -1,0 +1,94 @@
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--laranja);
+}
+
+.rodape__logo{
+    color: var(--branco);
+    font-family: var(--fonte-logo);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.rodape__contato{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.rodape__contato-texto, .rodape__texto{
+    font-family: var(--fonteprincipal);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.rodape__texto{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.rodape__redessociais-texto{
+    color: var(--branco);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.rodape__lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rodape__redessociais-texto{
+    font-size: 16px;
+}
+
+.rodape__lista-imagem{
+    width: 10vw;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width:1024px) {
+    .rodape{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .rodape__logo{
+        font-size: 32px;
+        width: 25vw;
+    }
+
+    .rodape__contato{
+        width: 40vw;        
+    }
+
+    .rodape__contato-texto{
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .rodape__lista{
+        width: 25vw;
+    }
+
+    .rodape__texto{
+        text-align: center;
+    }
+    .rodape__redessociais-texto{
+        font-size: 22px;
+    }
+
+    .rodape__lista-imagem{
+        width: auto;
+    }
+}
